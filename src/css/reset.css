@@ -1,0 +1,85 @@
+/* Reset.css */
+
+/* Remove margens, paddings, e bordas padrão */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Remove a decoração de texto em links */
+a {
+    text-decoration: none;
+    color: inherit; /* Herdar a cor do pai */
+}
+
+/* Definir largura completa para imagens, vídeos, etc. */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* Tornar os elementos de formulário mais consistentes */
+button,
+input,
+select,
+textarea {
+    font-family: inherit; /* Herdar a fonte do pai */
+    font-size: inherit;
+    line-height: inherit;
+}
+
+/* Remover bullets e paddings das listas */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Garantir que o texto não saia das bordas */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Remover estilos padrão de tabelas */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Definir altura mínima do body e aplicar um sistema de grid */
+html, body {
+    height: 100%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Garantir que os elementos principais ocupem o espaço adequado */
+main {
+    flex: 1;
+}
+
+/* Ajustar o tamanho das caixas de entrada e botões em dispositivos móveis */
+button, input, select, textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Tornar as listas horizontais */
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
