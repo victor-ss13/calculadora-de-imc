@@ -8,17 +8,21 @@
     <title>Calculadora de IMC</title>
 </head>
 <body>
+    <!-- O main é onde ficará dividido entre a seção que contém a imagem e o restante da página que interage com o usuário -->
     <main id="container">
+        <!-- Essa primeira seção contém apenas a imagem da página -->
         <section id="img">
             <img src="src/images/illustration.svg" alt="Pessoas treinando">
         </section>
 
+        <!-- Essa segunda seção contém toda a interação com  usuário, com seu formulário recheado de outputs e um botão para envio do formulário -->
         <section id="calculator">
             <form id="form">
                 <h1 id="title">
                     Calculadora - IMC
                 </h1>
 
+                <!-- A div abaixo contém o bloco contendo as informações necessárias para receber o peso do user -->
                 <div class="input-box">
                     <label for="weight">
                         Peso em Kg
@@ -31,6 +35,7 @@
                     </div>
                 </div>
 
+                <!-- A div abaixo contém o bloco contendo as informações necessárias para receber a altura do user -->
                 <div class="input-box">
                     <label for="height">
                         Altura em metros
