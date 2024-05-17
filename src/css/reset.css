@@ -1,85 +1,48 @@
-/* Reset.css */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-/* Remove margens, paddings, e bordas padrão */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    border: 0;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-
-/* Remove a decoração de texto em links */
-a {
-    text-decoration: none;
-    color: inherit; /* Herdar a cor do pai */
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
-
-/* Definir largura completa para imagens, vídeos, etc. */
-img,
-picture,
-video,
-canvas,
-svg {
-    display: block;
-    max-width: 100%;
-}
-
-/* Tornar os elementos de formulário mais consistentes */
-button,
-input,
-select,
-textarea {
-    font-family: inherit; /* Herdar a fonte do pai */
-    font-size: inherit;
-    line-height: inherit;
-}
-
-/* Remover bullets e paddings das listas */
-ul,
-ol {
-    list-style: none;
-}
-
-/* Garantir que o texto não saia das bordas */
 body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
+	line-height: 1;
 }
-
-/* Remover estilos padrão de tabelas */
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
-
-/* Definir altura mínima do body e aplicar um sistema de grid */
-html, body {
-    height: 100%;
-}
-
-body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Garantir que os elementos principais ocupem o espaço adequado */
-main {
-    flex: 1;
-}
-
-/* Ajustar o tamanho das caixas de entrada e botões em dispositivos móveis */
-button, input, select, textarea {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-}
-
-/* Tornar as listas horizontais */
-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-}
-
