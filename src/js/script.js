@@ -20,11 +20,11 @@ form.addEventListener('submit', function(event) {
     } else if (bmi <= 29.9) {
         description = 'Atenção! Você está acima do peso!';
     } else if (bmi <= 34.9) {
-        description = 'Cuidado! Você está com obesidade grau I!';
+        description = 'Cuidado! Você está com obesidade moderada!';
     } else if (bmi <= 39.9) {
-        description = 'Cuidado! Você está com obesidade grau II!';
+        description = 'Cuidado! Você está com obesidade severa!';
     } else if (bmi >= 40) {
-        description = 'Cuidado! Você está com obesidade grau III!';
+        description = 'Cuidado! Você está com obesidade mórbida!';
     } else {
         description = 'Error';
     }
