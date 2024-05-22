@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
 
+:root {
+    --font: #f8fafc;
+    --calculator: #262626;
+    --background: #18181b;
+    --main-color: #16a34a;
+    --font-2: #cbd5e1;
+    --input-background: #3f3f46;
+    --line: #ffffff34;
+}
+
 * {
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -13,7 +23,7 @@ body {
     justify-content: center; /*Está controlando o alinhamento horizontal*/
     width: 100%;
     height: 100vh;
-    background-color: #18181b;
+    background-color: var(--background);
 }
 
 #container {
@@ -31,8 +41,8 @@ body {
     flex-direction: column;
     gap: 2rem;
     padding: 2rem;
-    color: #f8fafc;
-    background-color: #262626;
+    color: var(--font);
+    background-color: var(--calculator);
     border-radius: 8px;
 }
 
@@ -50,7 +60,7 @@ body {
 #title::after {
     position: absolute;
     content: '';
-    background-color: #16a34a;
+    background-color: var(--main-color);
     width: 8rem;
     height: 3px;
     bottom: 0;
@@ -60,7 +70,7 @@ body {
 
 .input-box {
     font-size: 1.1rem;
-    color: #cbd5e1;
+    color: var(--font-2);
     font-weight: 500;
 }
 
@@ -68,7 +78,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #3f3f46;
+    background-color: var(--input-background);
     padding: 0.3rem;
     border-radius: 3px;
     margin-top: 3px;
@@ -76,7 +86,7 @@ body {
 
 .input-field span,
 .input-field i {
-    color: #cbd5e1;
+    color: var(--font-2);
     font-size: 1.3rem;
     padding: 0.6rem 1rem;
 }
@@ -86,7 +96,7 @@ body {
     border: none;
     width: 100%;
     font-size: 1.3rem;
-    color: #f8fafc;
+    color: var(--font);
     padding: 0 0.5rem;   
 }
 
@@ -103,8 +113,8 @@ body {
     border: none;
     font-size: 1.25rem;
     font-weight: bold;
-    background-color: #16a34a;
-    color: #f8fafc;
+    background-color:var(--main-color);
+    color: var(--font);
     padding: 0.5rem 0;
     border-radius: 3px;
     cursor: pointer;
@@ -114,7 +124,7 @@ body {
     display: flex;
     gap: 2rem;
     align-items: center;
-    border-top: 1px solid #ffffff34;
+    border-top: 1px solid var(--line);
     padding: 0.75rem 0;
 }
 
@@ -127,7 +137,7 @@ body {
 
 #bmi span:last-child {
     font-size: 0.875rem;
-    color: #cbd5e1;
+    color: var(--font-2);
 }
 
 #description {
@@ -135,12 +145,12 @@ body {
 }
 
 #more_info {
-    border-top: 1px solid #ffffff34;
+    border-top: 1px solid var(--line);
     padding-top: 1.5rem;
 }
 
 #more_info a {
-    color: #16a34a;
+    color: var(--main-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,9 +161,17 @@ body {
 }
 
 #more_info a:hover {
-    color: #cbd5e1;
+    color: var(--font-2);
 }
 
 .hidden {
     display: none;
+}
+
+.normal {
+    color: var(--main-color);
+}
+
+.attention {
+    color: #dc2626;
 }
